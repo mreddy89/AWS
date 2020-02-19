@@ -1,6 +1,9 @@
 #!/bin/bash
+#mention the region you want to run this on
 region=eu-west-1
+#mention the profile
 profile=dev
+#input your file in below file as .txt format, mention all the servers in the .txt file
 input="./instances_list_for_AMI.txt"
 
 #while read line;
@@ -14,4 +17,3 @@ do
 	echo "AMI Initiated for EC2 : ${ec2id}";
 echo ${result}
 done < $input
-#aws --profile dev --region eu-west-1 ec2 create-image --instance-id i-0be52d1198e4d69d3 --name "${ec2id}_$datetime" --description "This is the AMI of ${ec2id}" --no-reboot --dry-run

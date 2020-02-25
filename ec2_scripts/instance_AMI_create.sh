@@ -1,9 +1,7 @@
 #!/bin/bash
-#mention the region you want to run this on
 region=eu-west-1
-#mention the profile
 profile=dev
-#input your file in below file as .txt format, mention all the servers in the .txt file
+# Mention all the EC2 instances in the below .txt file for which you want to create AMI
 input="./instances_list_for_AMI.txt"
 
 #while read line;

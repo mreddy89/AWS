@@ -1,0 +1,13 @@
+{
+    "Rules": [
+      {
+        "ID": "S3_move_to_Glacier",
+        "Prefix": "",
+        "Status": "Enabled",
+        "Transition": {
+          "Days": 1,
+          "StorageClass": "GLACIER"
+        }
+      }
+    ]
+}
